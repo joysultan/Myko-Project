@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui -->
+    <style>
+      .font-barlow {
+        font-family: "Barlow", serif;
+      }
+      .b-h1{
+        text-shadow: -1px 5px 0px rgba(69, 248, 130, 0.66);
+      }
+ 
+
+      input:focus{
+        color: white;
+      }
+      textarea:focus{
+        color: white;
+      }
+ 
+      
+    </style>
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/91c49206b2.js" crossorigin="anonymous"></script>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header  style="background-image: url(img/banner\ bg.jpg); background-repeat: no-repeat; background-size: cover;">
+      <div class="navbar">
+        <div class="navbar-end">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 text-2xl font-medium text-white"
+            >
+              <li class="hover:bg-[#45F882] hover:text-black">
+                <a class="hover:bg-[#45F882] hover:text-black">Home</a>
+              </li>
+              <li><a class="hover:bg-[#45F882] hover:text-black">About us</a></li>
+              <li><a class="hover:bg-[#45F882] hover:text-black">Feature</a></li>
+              <li><a class="hover:bg-[#45F882] hover:text-black">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <img src="img/logo.png" alt="" class="w-1/2 cursor-pointer" />
+          </div>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-2xl font-medium text-white">
+            <li class="hover:bg-[##45F882] hover:text-black">
+              <a class="hover:bg-[#45F882] hover:text-black">Home</a>
+            </li>
+            <li><a class="hover:bg-[#45F882] hover:text-black">About us</a></li>
+            <li><a class="hover:bg-[#45F882] hover:text-black">Feature</a></li>
+            <li><a class="hover:bg-[#45F882] hover:text-black">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-yellow-400 text-black 2xl:mr-72 uppercase text-[20px] font-semibold">Sign in</a>
+        </div>
+      </div>
+
+      <!-- banner start -->
+       <section>
+        <div class="hero md:px-24 md:py-28">
+          <div class="hero-content flex-col lg:flex-row-reverse md:gap-60 items-center">
+            <img
+              src="img/banner _img.png"
+              class="max-w-sm  md:-mt-28 mt-12" />
+            <div>
+              <h3 class=" font-bold b-h2 bg-gradient-to-r from-[#30543c] text-[#45f882] mb-5 px-3 py-1 md:text-3xl text-2xl">LIVE GAMING</h3>
+              <h1 class="md:text-8xl text-2xl font-black tracking-[3px] b-h1 mb-5 text-white">STEAMING</h1>
+              <h3 class="font-extrabold md:text-3xl text-2xl tracking-[4px] uppercase text-white">VIDEO GAMES ONLINE</h3> <br>
+              <a href="#" class="border- border-2 border-white rounded-[30px] uppercase font-semibold p-3 tracking-wide text-black bg-yellow-400  contact-btn hover:bg-[#45F882] hover:text-black text-[20px]">Contact Us</a> <br>
+                <div class="mt-12">
+                  <a href="#" class="hover:bg-[#45F882] hover:text-black border- border-2 border-white rounded-[30px] uppercase font-black p-3 tracking-wider  mr-4 text-white">Dark Zone</a>
+              <a href="#" class="hover:bg-[#45F882] hover:text-black border- border-2 border-white rounded-[30px] uppercase font-black p-3 tracking-wider mr-4 text-white">Next Gen</a>
+              <a href="#" class="hover:bg-[#45F882] hover:text-black border- border-2 border-white rounded-[30px] uppercase font-black p-3 tracking-wider mr-4 text-white">Tanurpo</a>
+                </div>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- banner end -->
+    </header>
+    <!-- header end -->
+
+
+    <!-- POWERFUL SERVICES start -->
+     <section class="bg-[#141414] md:py-16 ">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img
+            src="img/services (3).jpg"
+            class="w-[583px]" />
+          <div>
+            <h2 class="text-[#45f882] text-2xl tracking-[1px] mb-4">POWERFUL SERVICES</h2>
+            <h1 class="text-4xl  text-white mb-10 font-medium">OUR POWERFUL SERVICES DONE <br> ON TIME</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <i class="fa-regular fa-gem text-3xl text-[#45f882] mb-4"></i>
+                <h3 class="text-white text-2xl font-medium mb-4">Year Experience</h3>
+                <p class="text-white text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque nemo et dolores optio.</p>
+
+              </div>
+              <div>
+                <i class="fa-solid fa-user-gear text-3xl text-[#45f882] mb-4"></i>
+                <h3 class="text-white text-2xl font-medium mb-4">Expert Teams</h3>
+                <p class="text-white text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque nemo et dolores optio.</p>
+
+              </div>
+              <div>
+                <i class="fa-solid fa-recycle text-3xl text-[#45f882] mb-4"></i>
+                <h3 class="text-white text-2xl font-medium mb-4">Worldwide Client</h3>
+                <p class="text-white text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque nemo et dolores optio.</p>
+
+              </div>
+              <div>
+                <i class="fa-solid fa-life-ring text-3xl text-[#45f882] mb-4"></i>
+                <h3 class="text-white text-2xl font-medium mb-4">Best NFT Game</h3>
+                <p class="text-white text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium itaque nemo et dolores optio.</p>
+
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- POWERFUL SERVICES end -->
+
+    <!-- gaming art start -->
+     <section class="bg-black px-[0] py-[100px]">
+      <div class="flex flex-col md:flex-row justify-center gap-9">
+        <div class="card lg:card-side bg-[#121a23] px-[20px] rounded-xl">
+          <div class="mt-5">
+            <img src="img/features (2).jpg" alt="" class="w-[190px] rounded-lg">
+          </div>
+          <div class="card-body">
+            <h2 class="card-title text-white">WOLF GAMING ART</h2>
+            <div class="flex">
+              <img src="img/frame.png" alt="">
+              <span><h3 class="text-white text-[22px] ml-2">Alax Max</h3></span>
+              <span><h5 class="text-white ml-2 text-[11px]">CREATOR</h5></span>
+            </div>
+              
+              <div class="flex justify-between border border-1 border-[#5f5f5f] p-[11px] rounded-xl mt-3 items-center">
+                <h3 class="text-white text-[19px]">1.002 <span class="text-yellow-400">ETH</span></h3>
+                <a href="#" class="text-black capitalize font-bold bg-yellow-400 px-[10px] py-[4px] rounded-lg">Bid <i class="fa-solid fa-arrow-right-long ml-1"></i></a>
+              </div>
+            
+           
+            
+          </div>
+        </div>
+        <div class="card lg:card-side bg-[#121a23] px-[20px] rounded-xl">
+          <div class="mt-5">
+            <img src="img/features (3).jpg" alt="" class="w-[190px] rounded-lg">
+          </div>
+          <div class="card-body">
+            <h2 class="card-title text-white">WOLF GAMING ART</h2>
+            <div class="flex">
+              <img src="img/frame.png" alt="">
+              <span><h3 class="text-white text-[22px] ml-2">Alax Max</h3></span>
+              <span><h5 class="text-white ml-2 text-[11px]">CREATOR</h5></span>
+            </div>
+              
+              <div class="flex justify-between border border-1 border-[#5f5f5f] p-[11px] rounded-xl mt-3 items-center">
+                <h3 class="text-white">1.002 <span class="text-yellow-400">ETH</span></h3>
+                <a href="#" class="text-black capitalize font-bold bg-yellow-400 px-[10px] py-[4px] rounded-lg">Bid <i class="fa-solid fa-arrow-right-long ml-1"></i></a>
+              </div>
+            
+           
+            
+          </div>
+        </div>
+       </div>
+       <div class="flex flex-col md:flex-row justify-center mt-8">
+        <div class="card lg:card-side bg-[#121a23] px-[20px] rounded-xl">
+          <div class="mt-5">
+            <img src="img/features (1).jpg" alt="" class="w-[190px] rounded-lg">
+          </div>
+          <div class="card-body">
+            <h2 class="card-title text-white">WOLF GAMING ART</h2>
+            <div class="flex">
+              <img src="img/frame.png" alt="">
+              <span><h3 class="text-white text-[22px] ml-2">Alax Max</h3></span>
+              <span><h5 class="text-white ml-2 text-[11px]">CREATOR</h5></span>
+            </div>
+              
+              <div class="flex justify-between border border-1 border-[#5f5f5f] p-[11px] rounded-xl mt-3 items-center">
+                <h3 class="text-white">1.002 <span class="text-yellow-400">ETH</span></h3>
+                <a href="#" class="text-black capitalize font-bold bg-yellow-400 px-[10px] py-[4px] rounded-lg">Bid <i class="fa-solid fa-arrow-right-long ml-1"></i></a>
+              </div>
+            
+           
+            
+          </div>
+        </div>
+       </div>
+     </section>
+
+    <!-- gaming art end -->
+
+    <!-- TOP RATED STEAMERS start -->
+     <section style="background-image: url(img/about\ bg.jpg) ; background-repeat: no-repeat; background-size: cover; padding: 100px 0;">
+      <div class="text-center">
+        <h2 class="tracking-[2px] text-[20px] mb-[10px] text-[#45f882] font-semibold">KNOW ABOUT US</h2>
+        <h1 class="text-[51px] tracking-[2px] text-white mb-8">TOP RATED STEAMERS</h1>
+        <a href="#" class="border- border-2 border-[#45f882] text-[20px] uppercase bg-transparent mr-[20px] px-[25px] py-[7px] text-white hover:bg-[#45f882] hover:text-black font-bold ">Buy Hero</a>
+        <a href="#" class="border- border-2 border-[#45f882] text-[20px] uppercase bg-transparent mr-[20px] px-[25px] py-[7px] text-white hover:bg-[#45f882] hover:text-black font-bold ">Buy Hero</a>
+      </div>
+      <div class="about-img cursor-pointer">
+
+        <div class="flex justify-center mt-9 gap-5">
+          <div>
+            <img src="img/about-1.png" alt="">
+          </div>
+          <div>
+            <img src="img/about-2.png" alt="">
+          </div>
+          <div>
+            <img src="img/about-3.png" alt="">
+          </div>
+          <div>
+            <img src="img/about-4.png" alt="">
+          </div>
+          <div>
+            <img src="img/about-5.png" alt="">
+          </div>
+          <div>
+            <img src="img/about-6.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- Human game start -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 mt-28 md:container md:mx-auto mb-36">
+          <div>
+            <img src="img/about_img01.jpg" alt="">
+          </div>
+          <div>
+            <h2 class="text-[37px] uppercase text-white">HUMAN GAME</h2>
+            <h3 class="text-[26px] text-[#ffb031] font-medium">RATE 50%</h3>
+            <p class="text-[#c5c5c5]">Lorem ipsum dolor sit amet, consteur adipiscing Duis elementum sollicitudin is yaugue euismods Nulla ullamcorper. Morbi pharetra tellus miolslis, tincidunt massa venenatis</p>
+            <div class=" flex mt-28 justify-center gap-7">
+             
+               <button class="font-bold px-[20px] py-[10px] uppercase rounded-sm text-white" style="background-image: -webkit-linear-gradient(0deg, #30543c 0%, transparent 100%, #45f882 100%);">DRAGON BALL</button>
+               <button class="font-bold px-[20px] py-[10px] uppercase rounded-sm text-white" style="background-image: -webkit-linear-gradient(0deg, #30543c 0%, transparent 100%, #45f882 100%);">NFT MARKET</button>
+               <button class="font-bold px-[20px] py-[10px] uppercase rounded-sm text-white" style="background-image: -webkit-linear-gradient(0deg, #30543c 0%, transparent 100%, #45f882 100%);">SUPPORT</button>
+            </div>
+          </div>
+       
+          <div class="flex flex-col">
+              <div class="flex mb-3 p-[10px] rounded-[10px] items-center" style="background-image: -webkit-linear-gradient(0deg, #30543c 0%, transparent 100%, #45f882 100%);">
+                <img src="img/game (1).png" alt="">
+            <span><h3 class="ml-[10px] text-[20px] text-white">Chichi Dragon Ball</h3></span>
+              </div>
+              <div class="flex mb-3 p-[10px] rounded-[10px] items-center" style="background-image: -webkit-linear-gradient(0deg, #30543c 0%, transparent 100%, #45f882 100%);">
+                <img src="img/game (2).png" alt="">
+                <span><h3 class="ml-[10px] text-[20px] text-white">Space Babe Night</h3></span>
+          </div>
+          <div class="flex p-[10px] rounded-[10px] items-center" style="background-image: -webkit-linear-gradient(0deg, #30543c 0%, transparent 100%, #45f882 100%);">
+            <img src="img/game (3).png" alt="">
+            <span><h3 class="ml-[10px] text-[20px] text-white">Dragon Ball</h3></span>
+          </div>
+        </div>
+      <!-- Human game end -->
+     </section>
+    <!-- TOP RATED STEAMERS end -->
+
+    <!-- our team member start -->
+     <section style="background-image: url(img/team_bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 100px 0;">
+      <div class="text-center">
+        <h2 class="text-[#45f882] font-medium tracking-[2px] text-2xl mb-3">OUR TEAM MEMBER</h2>
+        <h2 class="text-[52px] tracking-[2px] font-bold text-white">ACTIVE TEAM MEMBERS</h2>
+      </div>
+      <div class="flex flex-col lg:flex-row md:flex-wrap  justify-center gap-10 mt-6">
+        <div class="card bg-[#1c242f]  p-[30px] rounded-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="img/team-1.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl tracking-[1px] font-bold mb-1 text-white">KILLER MASTER</h2>
+            <p class="text-[#45f882] font-medium text-[18px]">Blockchain Expert</p>
+            
+          </div>
+        </div>
+        <div class="card bg-[#1c242f]  p-[30px] rounded-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="img/team-2.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl tracking-[1px] font-bold mb-1 text-white">KILLER MASTER</h2>
+            <p class="text-[#45f882] font-medium text-[18px]">Blockchain Expert</p>
+            
+          </div>
+        </div>
+        <div class="card bg-[#1c242f]  p-[30px] rounded-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="img/team-3.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl tracking-[1px] font-bold mb-1 text-white">KILLER MASTER</h2>
+            <p class="text-[#45f882] font-medium text-[18px]">Blockchain Expert</p>
+            
+          </div>
+        </div>
+        <div class="card bg-[#1c242f]  p-[30px] rounded-xl">
+          <figure class="px-10 pt-10">
+            <img
+              src="img/team-4.png"
+              alt="Shoes"
+              class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title text-2xl tracking-[1px] font-bold mb-1 text-white">KILLER MASTER</h2>
+            <p class="text-[#45f882] font-medium text-[18px]">Blockchain Expert</p>
+            
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- our team member end -->
+
+
+    <!-- community start -->
+     <section>
+      <div
+  class="hero "
+  style="background-image: url(img/bg\ contuct.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; padding: 120px 0;">
+  <div class="hero bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md">
+      <i class="fa-regular fa-circle-play text-6xl text-[#45f882] cursor-pointer"></i>
+      <h1 class="mb-5 text-4xl font-bold tracking-[2px]">JOIN THE COMMUNITY</h1>
+      <h6 class="mb-5 text-[18px] font-medium">
+        Join our Discord community and choosec onsteur
+      </h6>
+      <button class="btn bg-yellow-400 text-black py-[9px] px-[25px] hover:bg-[#45f882] text-[20px]">JOIN DISCORD</button>
+    </div>
+  </div>
+</div>
+     </section>
+    <!-- community end -->
+     <!-- ROADMAPS SEASONS start -->
+      <section class="" style="background-image: url(img/roadmap_bg.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 100px 0; ">
+        <div class="flex justify-evenly md:flex-row flex-col">
+          <div>
+            <h2 class="text-[51px] font-bold tracking-[2px] text-white">A LOOK INTO <br> ROADMAPS <br> SEASONS</h2>
+            <p class="text-[18px] mt-[30px] mb-[30px] text-white ">With Season 1 Ending with our play and Duis elementum <br> sollicitudin is yaugue euismods Nulla ulla Player-focused updates <br> games from Mobile App and Enjoy.</p>
+            <a href="#" class="bg-yellow-400 text-black py-[9px] px-[25px] hover:bg-[#45f882] text-[20px] rounded-lg font-semibold">Contact Us</a>
+           <div style="padding: 50px 0;">
+            <img src="img/roadmap.png" alt="">
+           </div>
+          </div>
+          <div >
+            <div class="card bg-[#1b242e]  rounded-xl mb-[20px] ">
+              <div class="card-body   p-[48px]">
+                <h2 class="card-title text-white text-3xl font-bold">SEASON 1</h2>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-yellow-400 rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px] ml-2">Battle Practice Mode</p>
+                  
+                </div>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-yellow-400 rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px] ml-2">Land Creation & Building</p>
+                  
+                </div>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-yellow-400 rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px] ml-2">Android Mobile</p>
+                  
+                </div>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-yellow-400 rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px] ml-2">Land Creation & Building</p>
+                  
+                </div>
+               
+               
+
+              </div>
+            </div>
+            <div class="card bg-[#1b242e]  rounded-xl mb-[20px]">
+              <div class="card-body p-[48px]">
+                <h2 class="card-title text-white text-3xl font-bold">SEASON 2</h2>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-yellow-400 rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px] ">Battle Practice Mode</p>
+                  
+                </div>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-yellow-400 rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px]">Land Creation & Building</p>
+                  
+                </div>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-black border- border-2 border-[#515151] rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px]">iOS Open Beta</p>
+                  
+                </div>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-black border- border-2 border-[#515151] rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px]">Battle Practice Mode</p>
+                  
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="card bg-[#1b242e]  rounded-xl mb-[20px]">
+              <div class="card-body p-[48px]">
+                <h2 class="card-title text-white text-3xl font-bold">SEASON 3</h2>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-black border- border-2 border-[#515151] rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px]">Land Creation & Building</p>
+                  
+                </div>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-black border- border-2 border-[#515151] rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px]">Battle Practice Mode</p>
+                  
+                </div>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-black border- border-2 border-[#515151] rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px]">Land Creation & Building</p>
+                  
+                </div>
+                <div class="flex items-center gap-2 ">
+                  <span class="w-[18px] h-[18px] block bg-black border- border-2 border-[#515151] rounded-[50%]"></span>
+                  <p class="text-[#a6a6a6] text-[18px]">Battle Practice Mode</p>
+                  
+                </div>
+
+
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+     <!-- ROADMAPS SEASONS end -->
+      <!-- TOP TRENDING start -->
+         <section class="bg-[#10181f]" style="padding: 100px 0;">
+          <div class="md:container md:mx-auto ">
+            <div class="flex items-center mb-9">
+              <h2 class="text-3xl font-bold tracking-[2px] mb-8 2xl:ml-16 text-white">TOP TRENDING</h2>
+            <img src="https://nazmul104633.github.io/Game_Website/images/fire.png" alt="" class="w-[4%] -mt-8 ml-5">
+            </div>
+            <div class="flex justify-center gap-8 md:flex-row flex-col ">
+              <div class="bg-[#212b35] p-[20px] border-2 border-[#4b4b4b] rounded-xl" style="clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 51%);">
+                <div class="flex justify-between">
+                  <div class="flex gap-3 ">
+                    <div>
+                      <img src="img/frame.png" alt=""  >
+                    </div>
+                    <div>
+                      <h4 class="text-[20px] capitalize text-white">clanda max</h4>
+                    <a href="#" class="text-[#959595] text-base underline">Don max</a>
+                    </div>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart text-green-500 text-[33px]"></i>
+                  </div>
+                </div>
+                <img src="https://nazmul104633.github.io/Game_Website/images/top%20(1).jpg" alt="" class="rounded-xl mt-5 mb-5">
+                <h4 class="text-[#d3d3d3] text-[15px] capitalize">last bid</h4>
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-3">
+                    <i class="fa-brands fa-ethereum text-white text-[20px]"></i>
+                  <h6 class="text-2xl font-medium text-white">2.006</h6>
+                  <span class="text-2xl font-medium text-white">ETH</span>
+                  </div>
+                  <div>
+                    <a href="#" class="text-black capitalize font-bold bg-yellow-400 px-[10px] py-[4px] rounded-lg">Bid <i class="fa-solid fa-arrow-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-[#212b35] border-2 border-[#4b4b4b] p-[20px] rounded-xl" style="clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 51%);">
+                <div class="flex justify-between">
+                  <div class="flex gap-3 ">
+                    <div>
+                      <img src="img/frame.png" alt="" class="rounded-xl">
+                    </div>
+                    <div>
+                      <h4 class="text-[20px] capitalize text-white">clanda max</h4>
+                      <a href="#" class="text-[#959595] text-base underline">Don max</a>
+                    </div>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart text-green-500  text-[33px]"></i>
+                  </div>
+                </div>
+                <img src="https://nazmul104633.github.io/Game_Website/images/top%20(2).jpg" alt="" class="rounded-xl mt-5 mb-5">
+                <h4 class="text-[#d3d3d3] text-[15px] capitalize" >last bid</h4>
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-3">
+                    <i class="fa-brands fa-ethereum text-white  text-[20px]"></i>
+                  <h6 class="text-2xl font-medium text-white">2.006</h6>
+                  <span class="text-2xl font-medium text-white">ETH</span>
+                  </div>
+                  <div>
+                    <a href="#" class="text-black capitalize font-bold bg-yellow-400 px-[10px] py-[4px] rounded-lg">Bid <i class="fa-solid fa-arrow-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-[#212b35] border-2 border-[#4b4b4b] p-[20px]  rounded-xl" style="clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 51%);">
+                <div class="flex justify-between">
+                  <div class="flex gap-3 ">
+                    <div>
+                      <img src="img/frame.png" alt="" class="rounded-xl">
+                    </div>
+                    <div>
+                      <h4 class="text-[20px] capitalize text-white">clanda max</h4>
+                    <a href="#" class="text-[#959595] text-base underline">Don max</a>
+                    </div>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-heart text-green-500 text-[33px]"></i>
+                  </div>
+                </div>
+                <img src="https://nazmul104633.github.io/Game_Website/images/top%20(2).jpg" alt="" class="rounded-xl mt-5 mb-5">
+                <h4 class="text-[#d3d3d3] text-[15px]">last bid</h4>
+                <div class="flex justify-between">
+                  <div class="flex items-center">
+                    <i class="fa-brands fa-ethereum text-white text-[20px]"></i>
+                  <h6 class="text-2xl font-medium text-white">2.006</h6>
+                  <span class="text-2xl font-medium text-white">ETH</span>
+                  </div>
+                  <div>
+                    <a href="#" class="text-black capitalize font-bold bg-yellow-400 px-[10px] py-[4px] rounded-lg">Bid <i class="fa-solid fa-arrow-right-long"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </section>
+      <!-- TOP TRENDING end -->
+
+      <!-- contact us start -->
+       <section class="" style="background-image: url(img/roadmap_bg.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 100px 0;">
+        <div class="md:container md:mx-auto">
+          <h1 class="text-center text-[60px] text-white tracking-[2px] font-bold uppercase">contuct us</h1>
+          <div class="flex items-center md:flex-row flex-col ">
+            <div class="w-[50%]">
+              <h2 class="tracking-[2px] text-3xl font-bold text-white">CONTACT US AND FIND YOUR <br> MYKD</h2>
+              <p class="text-base text-[#ababab]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nam sit blanditiis <br> doloribus praesentium cum.</p>
+              <h3 class="text-[27px] font-bold text-white">INFORMATION</h3>
+              <h4 class="text-base text-[#ababab]">infogan@exemple.bd.com</h4>
+              <h4 class="text-base text-[#ababab]">+971 123 456 789</h4>
+              <h4 class="text-base text-[#ababab]">New Central Park W7 Street, New York</h4>
+            </div>
+            <div class="w-[50%] mt-6">
+              <form action="">
+                <input type="text" placeholder="Name" class="bg-transparent w-[49%] border-2 border-[#5f5f5f] p-[10px]">
+                <input type="gmail" placeholder="Email" class="bg-transparent w-[49%] border-2 border-[#5f5f5f] p-[10px]"> <br>
+                <textarea name="" id="" cols="30" rows="10" class="bg-transparent border-2 border-[#5f5f5f] w-[99%] mt-[20px] mb-[20px]"></textarea> <br>
+                <button class="bg-yellow-400 text-black py-[9px] px-[25px] hover:bg-[#45f882] text-[20px] rounded-lg font-semibold">SUBMIT NOW</button>
+  
+              </form>
+            </div>
+          </div>
+        </div>
+
+       </section>
+      <!-- contact us end -->
+
+      <!-- footer start -->
+       <section class=" text-base-content p-10 bg-[#000] text-white">
+        <footer class=" footer md:container md:mx-auto  ">
+          <div>
+            <img class="w-1/2" src="img/logo.png" alt="">
+            <p class="text-base font-semibold">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Reprehenderit, corrupti incidunt <br> voluptatum</p>
+            <div class="text-center">
+              <a href="#"><i class="fa-brands fa-facebook bg-[#45f882] hover:bg-[#ffbe18] md:text-2xl text-xl text-black w-[35px] h-[35px]  mr-2 rounded-[50%]"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter bg-[#45f882] hover:bg-[#ffbe18] md:text-2xl text-xl text-black w-[35px] h-[35px]  mr-2 rounded-[50%]"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin bg-[#45f882] hover:bg-[#ffbe18] md:text-2xl text-xl text-black w-[35px] h-[35px]  mr-2 rounded-[50%]"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram bg-[#45f882] hover:bg-[#ffbe18] md:text-2xl text-xl text-black w-[35px] h-[35px]  mr-2 rounded-[50%]"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube bg-[#45f882] hover:bg-[#ffbe18] md:text-2xl text-xl text-black w-[35px] h-[35px]  mr-2 rounded-[50%]"></i></a>
+          </div>
+          </div>
+    
+          <nav>
+            <h6 class="md:text-2xl text-xl font-semibold text-[#45f882] capitalize ">userful link</h6>
+            <a href="#" class="text-lg font-medium "><i class="fa-solid fa-chevron-right mr-3"></i>about our company</a>
+            <a href="#" class="text-lg font-medium "><i class="fa-solid fa-chevron-right mr-3"></i>about our company</a>
+            <a href="#" class="text-lg font-medium "><i class="fa-solid fa-chevron-right mr-3"></i>about our company</a>
+            <a href="#" class="text-lg font-medium "><i class="fa-solid fa-chevron-right mr-3"></i>about our company</a>
+            <a href="#" class="text-lg font-medium "><i class="fa-solid fa-chevron-right mr-3"></i>about our company</a>
+            
+          </nav>
+          <nav>
+            <h6 class="md:text-2xl text-xl font-semibold text-[#45f882] capitalize ">contact us</h6>
+            
+              <div class="flex gap-3 items-center">
+                    <div>
+                      <i class="fa-solid fa-phone"></i>
+                    </div> 
+                    <div>
+                      <h5>about our company</h5>
+                <h5>4141 berlin, germeny city</h5>
+                    </div>
+              </div>
+              <div class="flex gap-3 items-center">
+                    <div>
+                      <i class="fa-regular fa-envelope"></i>
+                    </div> 
+                    <div>
+                      <h5>about our company</h5>
+                <h5>4141 berlin, germeny city</h5>
+                    </div>
+              </div>
+              <div class="flex gap-3 items-center">
+                    <div>
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div> 
+                    <div>
+                      <h5>about our company</h5>
+                <h5>4141 berlin, germeny city</h5>
+                    </div>
+              </div>
+              
+           
+          </nav>
+  
+          <form>
+            <h6 class="md:text-2xl text-xl font-semibold text-[#45f882] capitalize ">newsletter</h6>
+            <fieldset class="form-control w-80">
+              <label class="label">
+                <span class="label-text">subcribe our newsletter to get the <br> last news</span>
+              </label>
+              <div class="join">
+                <input
+                  type="text"
+                  placeholder="username@site.com"
+                  class="input input-bordered join-item" />
+                
+              </div>
+             
+            </fieldset>
+            <button class="bg-yellow-400 text-black py-[9px] px-[25px] hover:bg-[#45f882] text-[20px] rounded-lg font-semibold">SUBSCRIBE</button>
+          </form>
+        </footer>
+       </section>
+      
+      <!-- footer end -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>

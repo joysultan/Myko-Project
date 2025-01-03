@@ -1,0 +1,15 @@
+<i class="fa-regular fa-gem"></i>
+<i class="fa-solid fa-user-gear"></i>
+<i class="fa-solid fa-recycle"></i>
+<i class="fa-solid fa-life-ring"></i>
+<i class="fa-regular fa-circle-play"></i>
+
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-linkedin"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-youtube"></i>
+<i class="fa-solid fa-chevron-right"></i>
+
+
+green: #45f882
